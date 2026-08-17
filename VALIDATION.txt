@@ -1,0 +1,41 @@
+Repository assembly checks
+
+validator exit: 0
+test suite exit: 0
+builder exit: 0
+
+Validator output:
+Vocabulary Markdown Validator
+Version: 0.6.0
+Format: 0.1
+Run: 2026-08-17T16:09:06+00:00
+Source: tool-shed-vocabulary.md
+
+----------------------------------------
+
+PASS: 156
+WARN: 0
+ERROR: 0
+
+VALID
+
+Test output:
+PASS valid-minimal.md (exit=0, pass=67, warn=0, error=0)
+PASS valid-comprehensive.md (exit=0, pass=146, warn=0, error=0)
+PASS warn-missing-status.md (exit=0, pass=66, warn=1, error=0)
+PASS error-duplicate-term.md (exit=1, pass=75, warn=0, error=1)
+PASS error-kind-section-mismatch.md (exit=1, pass=66, warn=0, error=2)
+PASS error-undefined-composite-member.md (exit=1, pass=65, warn=0, error=1)
+PASS error-invalid-requirement.md (exit=1, pass=66, warn=0, error=1)
+PASS error-enumerator-no-values.md (exit=1, pass=64, warn=0, error=1)
+PASS error-enumerator-duplicate-value.md (exit=1, pass=68, warn=0, error=1)
+PASS error-leaf-has-composition.md (exit=1, pass=66, warn=0, error=1)
+PASS error-affordance-has-returns.md (exit=1, pass=67, warn=0, error=1)
+PASS error-resource-has-actions.md (exit=1, pass=67, warn=0, error=1)
+PASS error-external-missing-source.md (exit=1, pass=69, warn=0, error=1)
+PASS error-external-invalid-uri.md (exit=1, pass=69, warn=0, error=1)
+PASS error-duplicate-section.md (exit=1, pass=67, warn=0, error=1)
+
+Tests: 15
+Passed: 15
+Failed: 0

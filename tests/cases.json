@@ -1,0 +1,92 @@
+{
+  "valid-minimal.md": {
+    "exit": 0,
+    "pass": null,
+    "warn": null,
+    "error": null
+  },
+  "valid-comprehensive.md": {
+    "exit": 0,
+    "pass": null,
+    "warn": null,
+    "error": null
+  },
+  "warn-missing-status.md": {
+    "exit": 0,
+    "pass": null,
+    "warn": 1,
+    "error": null
+  },
+  "error-duplicate-term.md": {
+    "exit": 1,
+    "pass": null,
+    "warn": null,
+    "error": null
+  },
+  "error-kind-section-mismatch.md": {
+    "exit": 1,
+    "pass": null,
+    "warn": null,
+    "error": null
+  },
+  "error-undefined-composite-member.md": {
+    "exit": 1,
+    "pass": null,
+    "warn": null,
+    "error": null
+  },
+  "error-invalid-requirement.md": {
+    "exit": 1,
+    "pass": null,
+    "warn": null,
+    "error": null
+  },
+  "error-enumerator-no-values.md": {
+    "exit": 1,
+    "pass": null,
+    "warn": null,
+    "error": null
+  },
+  "error-enumerator-duplicate-value.md": {
+    "exit": 1,
+    "pass": null,
+    "warn": null,
+    "error": null
+  },
+  "error-leaf-has-composition.md": {
+    "exit": 1,
+    "pass": null,
+    "warn": null,
+    "error": null
+  },
+  "error-affordance-has-returns.md": {
+    "exit": 1,
+    "pass": null,
+    "warn": null,
+    "error": null
+  },
+  "error-resource-has-actions.md": {
+    "exit": 1,
+    "pass": null,
+    "warn": null,
+    "error": null
+  },
+  "error-external-missing-source.md": {
+    "exit": 1,
+    "pass": null,
+    "warn": null,
+    "error": null
+  },
+  "error-external-invalid-uri.md": {
+    "exit": 1,
+    "pass": null,
+    "warn": null,
+    "error": null
+  },
+  "error-duplicate-section.md": {
+    "exit": 1,
+    "pass": null,
+    "warn": null,
+    "error": null
+  }
+}
