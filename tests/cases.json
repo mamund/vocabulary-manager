@@ -11,6 +11,12 @@
     "warn": null,
     "error": null
   },
+  "valid-composite-enumerator.md": {
+    "exit": 0,
+    "pass": null,
+    "warn": null,
+    "error": null
+  },
   "warn-missing-status.md": {
     "exit": 0,
     "pass": null,
@@ -30,6 +36,18 @@
     "error": null
   },
   "error-undefined-composite-member.md": {
+    "exit": 1,
+    "pass": null,
+    "warn": null,
+    "error": null
+  },
+  "error-composite-resource-member.md": {
+    "exit": 1,
+    "pass": null,
+    "warn": null,
+    "error": null
+  },
+  "error-composite-affordance-member.md": {
     "exit": 1,
     "pass": null,
     "warn": null,

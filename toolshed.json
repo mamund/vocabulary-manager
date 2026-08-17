@@ -1,0 +1,2090 @@
+{
+  "validator": "Vocabulary Markdown Validator",
+  "version": "0.6.1",
+  "formatVersion": "0.1",
+  "run": "2026-08-17T15:15:56-04:00",
+  "source": "2026-08-17-tool-shed-vocabulary.md",
+  "valid": true,
+  "summary": {
+    "pass": 415,
+    "warn": 0,
+    "error": 0
+  },
+  "findings": [
+    {
+      "level": "PASS",
+      "message": "Document contains exactly one H1 title.",
+      "line": null
+    },
+    {
+      "level": "PASS",
+      "message": "Vocabulary title is present.",
+      "line": null
+    },
+    {
+      "level": "PASS",
+      "message": "Version is present.",
+      "line": null
+    },
+    {
+      "level": "PASS",
+      "message": "Status is present.",
+      "line": null
+    },
+    {
+      "level": "PASS",
+      "message": "Required section \"Atoms\" is present.",
+      "line": null
+    },
+    {
+      "level": "PASS",
+      "message": "Required section \"Enumerators\" is present.",
+      "line": null
+    },
+    {
+      "level": "PASS",
+      "message": "Required section \"Composites\" is present.",
+      "line": null
+    },
+    {
+      "level": "PASS",
+      "message": "Required section \"Resources\" is present.",
+      "line": null
+    },
+    {
+      "level": "PASS",
+      "message": "Required section \"Affordances\" is present.",
+      "line": null
+    },
+    {
+      "level": "PASS",
+      "message": "Section \"Atoms\" is unique.",
+      "line": 10
+    },
+    {
+      "level": "PASS",
+      "message": "Section \"Enumerators\" is unique.",
+      "line": 90
+    },
+    {
+      "level": "PASS",
+      "message": "Section \"Composites\" is unique.",
+      "line": 117
+    },
+    {
+      "level": "PASS",
+      "message": "Section \"Resources\" is unique.",
+      "line": 191
+    },
+    {
+      "level": "PASS",
+      "message": "Section \"Affordances\" is unique.",
+      "line": 205
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"toolId\" is unique.",
+      "line": 12
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"toolName\" is unique.",
+      "line": 18
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"toolDescription\" is unique.",
+      "line": 24
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"memberId\" is unique.",
+      "line": 30
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"memberName\" is unique.",
+      "line": 36
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"memberEmail\" is unique.",
+      "line": 42
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"reservationId\" is unique.",
+      "line": 48
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"reservedAt\" is unique.",
+      "line": 54
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"expiresAt\" is unique.",
+      "line": 60
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"checkoutId\" is unique.",
+      "line": 66
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"checkedOutAt\" is unique.",
+      "line": 72
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"dueDate\" is unique.",
+      "line": 78
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"returnedAt\" is unique.",
+      "line": 84
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"ToolStatus\" is unique.",
+      "line": 92
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"MemberStatus\" is unique.",
+      "line": 106
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"Tool\" is unique.",
+      "line": 119
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"Member\" is unique.",
+      "line": 134
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"Reservation\" is unique.",
+      "line": 149
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"Checkout\" is unique.",
+      "line": 170
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"tool\" is unique.",
+      "line": 193
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"member\" is unique.",
+      "line": 199
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"addTool\" is unique.",
+      "line": 207
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"searchAvailableTools\" is unique.",
+      "line": 213
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"reserveTool\" is unique.",
+      "line": 219
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"cancelReservation\" is unique.",
+      "line": 226
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"checkoutTool\" is unique.",
+      "line": 232
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"returnTool\" is unique.",
+      "line": 239
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"inspectTool\" is unique.",
+      "line": 249
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"retireTool\" is unique.",
+      "line": 258
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"addMember\" is unique.",
+      "line": 267
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"searchForMember\" is unique.",
+      "line": 273
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"updateMember\" is unique.",
+      "line": 279
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"searchCheckoutHistory\" is unique.",
+      "line": 286
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"toolId\" is under a recognized vocabulary section.",
+      "line": 12
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"toolId\" has a Kind.",
+      "line": 12
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"toolId\" has valid Kind \"atom\".",
+      "line": 12
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"toolId\" Kind matches section \"Atoms\".",
+      "line": 12
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"toolId\" has a local definition.",
+      "line": 12
+    },
+    {
+      "level": "PASS",
+      "message": "Atom \"toolId\" has no Values block.",
+      "line": 12
+    },
+    {
+      "level": "PASS",
+      "message": "Atom \"toolId\" has no Composition block.",
+      "line": 12
+    },
+    {
+      "level": "PASS",
+      "message": "Atom \"toolId\" has no Additional field.",
+      "line": 12
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"toolName\" is under a recognized vocabulary section.",
+      "line": 18
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"toolName\" has a Kind.",
+      "line": 18
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"toolName\" has valid Kind \"atom\".",
+      "line": 18
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"toolName\" Kind matches section \"Atoms\".",
+      "line": 18
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"toolName\" has a local definition.",
+      "line": 18
+    },
+    {
+      "level": "PASS",
+      "message": "Atom \"toolName\" has no Values block.",
+      "line": 18
+    },
+    {
+      "level": "PASS",
+      "message": "Atom \"toolName\" has no Composition block.",
+      "line": 18
+    },
+    {
+      "level": "PASS",
+      "message": "Atom \"toolName\" has no Additional field.",
+      "line": 18
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"toolDescription\" is under a recognized vocabulary section.",
+      "line": 24
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"toolDescription\" has a Kind.",
+      "line": 24
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"toolDescription\" has valid Kind \"atom\".",
+      "line": 24
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"toolDescription\" Kind matches section \"Atoms\".",
+      "line": 24
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"toolDescription\" has a local definition.",
+      "line": 24
+    },
+    {
+      "level": "PASS",
+      "message": "Atom \"toolDescription\" has no Values block.",
+      "line": 24
+    },
+    {
+      "level": "PASS",
+      "message": "Atom \"toolDescription\" has no Composition block.",
+      "line": 24
+    },
+    {
+      "level": "PASS",
+      "message": "Atom \"toolDescription\" has no Additional field.",
+      "line": 24
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"memberId\" is under a recognized vocabulary section.",
+      "line": 30
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"memberId\" has a Kind.",
+      "line": 30
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"memberId\" has valid Kind \"atom\".",
+      "line": 30
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"memberId\" Kind matches section \"Atoms\".",
+      "line": 30
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"memberId\" has a local definition.",
+      "line": 30
+    },
+    {
+      "level": "PASS",
+      "message": "Atom \"memberId\" has no Values block.",
+      "line": 30
+    },
+    {
+      "level": "PASS",
+      "message": "Atom \"memberId\" has no Composition block.",
+      "line": 30
+    },
+    {
+      "level": "PASS",
+      "message": "Atom \"memberId\" has no Additional field.",
+      "line": 30
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"memberName\" is under a recognized vocabulary section.",
+      "line": 36
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"memberName\" has a Kind.",
+      "line": 36
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"memberName\" has valid Kind \"atom\".",
+      "line": 36
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"memberName\" Kind matches section \"Atoms\".",
+      "line": 36
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"memberName\" has a local definition.",
+      "line": 36
+    },
+    {
+      "level": "PASS",
+      "message": "Atom \"memberName\" has no Values block.",
+      "line": 36
+    },
+    {
+      "level": "PASS",
+      "message": "Atom \"memberName\" has no Composition block.",
+      "line": 36
+    },
+    {
+      "level": "PASS",
+      "message": "Atom \"memberName\" has no Additional field.",
+      "line": 36
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"memberEmail\" is under a recognized vocabulary section.",
+      "line": 42
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"memberEmail\" has a Kind.",
+      "line": 42
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"memberEmail\" has valid Kind \"atom\".",
+      "line": 42
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"memberEmail\" Kind matches section \"Atoms\".",
+      "line": 42
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"memberEmail\" has a local definition.",
+      "line": 42
+    },
+    {
+      "level": "PASS",
+      "message": "Atom \"memberEmail\" has no Values block.",
+      "line": 42
+    },
+    {
+      "level": "PASS",
+      "message": "Atom \"memberEmail\" has no Composition block.",
+      "line": 42
+    },
+    {
+      "level": "PASS",
+      "message": "Atom \"memberEmail\" has no Additional field.",
+      "line": 42
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"reservationId\" is under a recognized vocabulary section.",
+      "line": 48
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"reservationId\" has a Kind.",
+      "line": 48
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"reservationId\" has valid Kind \"atom\".",
+      "line": 48
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"reservationId\" Kind matches section \"Atoms\".",
+      "line": 48
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"reservationId\" has a local definition.",
+      "line": 48
+    },
+    {
+      "level": "PASS",
+      "message": "Atom \"reservationId\" has no Values block.",
+      "line": 48
+    },
+    {
+      "level": "PASS",
+      "message": "Atom \"reservationId\" has no Composition block.",
+      "line": 48
+    },
+    {
+      "level": "PASS",
+      "message": "Atom \"reservationId\" has no Additional field.",
+      "line": 48
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"reservedAt\" is under a recognized vocabulary section.",
+      "line": 54
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"reservedAt\" has a Kind.",
+      "line": 54
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"reservedAt\" has valid Kind \"atom\".",
+      "line": 54
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"reservedAt\" Kind matches section \"Atoms\".",
+      "line": 54
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"reservedAt\" has a local definition.",
+      "line": 54
+    },
+    {
+      "level": "PASS",
+      "message": "Atom \"reservedAt\" has no Values block.",
+      "line": 54
+    },
+    {
+      "level": "PASS",
+      "message": "Atom \"reservedAt\" has no Composition block.",
+      "line": 54
+    },
+    {
+      "level": "PASS",
+      "message": "Atom \"reservedAt\" has no Additional field.",
+      "line": 54
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"expiresAt\" is under a recognized vocabulary section.",
+      "line": 60
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"expiresAt\" has a Kind.",
+      "line": 60
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"expiresAt\" has valid Kind \"atom\".",
+      "line": 60
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"expiresAt\" Kind matches section \"Atoms\".",
+      "line": 60
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"expiresAt\" has a local definition.",
+      "line": 60
+    },
+    {
+      "level": "PASS",
+      "message": "Atom \"expiresAt\" has no Values block.",
+      "line": 60
+    },
+    {
+      "level": "PASS",
+      "message": "Atom \"expiresAt\" has no Composition block.",
+      "line": 60
+    },
+    {
+      "level": "PASS",
+      "message": "Atom \"expiresAt\" has no Additional field.",
+      "line": 60
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"checkoutId\" is under a recognized vocabulary section.",
+      "line": 66
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"checkoutId\" has a Kind.",
+      "line": 66
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"checkoutId\" has valid Kind \"atom\".",
+      "line": 66
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"checkoutId\" Kind matches section \"Atoms\".",
+      "line": 66
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"checkoutId\" has a local definition.",
+      "line": 66
+    },
+    {
+      "level": "PASS",
+      "message": "Atom \"checkoutId\" has no Values block.",
+      "line": 66
+    },
+    {
+      "level": "PASS",
+      "message": "Atom \"checkoutId\" has no Composition block.",
+      "line": 66
+    },
+    {
+      "level": "PASS",
+      "message": "Atom \"checkoutId\" has no Additional field.",
+      "line": 66
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"checkedOutAt\" is under a recognized vocabulary section.",
+      "line": 72
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"checkedOutAt\" has a Kind.",
+      "line": 72
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"checkedOutAt\" has valid Kind \"atom\".",
+      "line": 72
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"checkedOutAt\" Kind matches section \"Atoms\".",
+      "line": 72
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"checkedOutAt\" has a local definition.",
+      "line": 72
+    },
+    {
+      "level": "PASS",
+      "message": "Atom \"checkedOutAt\" has no Values block.",
+      "line": 72
+    },
+    {
+      "level": "PASS",
+      "message": "Atom \"checkedOutAt\" has no Composition block.",
+      "line": 72
+    },
+    {
+      "level": "PASS",
+      "message": "Atom \"checkedOutAt\" has no Additional field.",
+      "line": 72
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"dueDate\" is under a recognized vocabulary section.",
+      "line": 78
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"dueDate\" has a Kind.",
+      "line": 78
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"dueDate\" has valid Kind \"atom\".",
+      "line": 78
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"dueDate\" Kind matches section \"Atoms\".",
+      "line": 78
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"dueDate\" has a local definition.",
+      "line": 78
+    },
+    {
+      "level": "PASS",
+      "message": "Atom \"dueDate\" has no Values block.",
+      "line": 78
+    },
+    {
+      "level": "PASS",
+      "message": "Atom \"dueDate\" has no Composition block.",
+      "line": 78
+    },
+    {
+      "level": "PASS",
+      "message": "Atom \"dueDate\" has no Additional field.",
+      "line": 78
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"returnedAt\" is under a recognized vocabulary section.",
+      "line": 84
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"returnedAt\" has a Kind.",
+      "line": 84
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"returnedAt\" has valid Kind \"atom\".",
+      "line": 84
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"returnedAt\" Kind matches section \"Atoms\".",
+      "line": 84
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"returnedAt\" has a local definition.",
+      "line": 84
+    },
+    {
+      "level": "PASS",
+      "message": "Atom \"returnedAt\" has no Values block.",
+      "line": 84
+    },
+    {
+      "level": "PASS",
+      "message": "Atom \"returnedAt\" has no Composition block.",
+      "line": 84
+    },
+    {
+      "level": "PASS",
+      "message": "Atom \"returnedAt\" has no Additional field.",
+      "line": 84
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"ToolStatus\" is under a recognized vocabulary section.",
+      "line": 92
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"ToolStatus\" has a Kind.",
+      "line": 92
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"ToolStatus\" has valid Kind \"enumerator\".",
+      "line": 92
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"ToolStatus\" Kind matches section \"Enumerators\".",
+      "line": 92
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"ToolStatus\" has a local definition.",
+      "line": 92
+    },
+    {
+      "level": "PASS",
+      "message": "Enumerator \"ToolStatus\" contains values.",
+      "line": 92
+    },
+    {
+      "level": "PASS",
+      "message": "Enumerator \"ToolStatus\" has no Composition block.",
+      "line": 92
+    },
+    {
+      "level": "PASS",
+      "message": "Enumerator \"ToolStatus\" has no Additional field.",
+      "line": 92
+    },
+    {
+      "level": "PASS",
+      "message": "Value \"available\" is unique within enumerator \"ToolStatus\".",
+      "line": 100
+    },
+    {
+      "level": "PASS",
+      "message": "Value \"available\" in enumerator \"ToolStatus\" has a definition.",
+      "line": 100
+    },
+    {
+      "level": "PASS",
+      "message": "Value \"reserved\" is unique within enumerator \"ToolStatus\".",
+      "line": 101
+    },
+    {
+      "level": "PASS",
+      "message": "Value \"reserved\" in enumerator \"ToolStatus\" has a definition.",
+      "line": 101
+    },
+    {
+      "level": "PASS",
+      "message": "Value \"checkedOut\" is unique within enumerator \"ToolStatus\".",
+      "line": 102
+    },
+    {
+      "level": "PASS",
+      "message": "Value \"checkedOut\" in enumerator \"ToolStatus\" has a definition.",
+      "line": 102
+    },
+    {
+      "level": "PASS",
+      "message": "Value \"outOfCommission\" is unique within enumerator \"ToolStatus\".",
+      "line": 103
+    },
+    {
+      "level": "PASS",
+      "message": "Value \"outOfCommission\" in enumerator \"ToolStatus\" has a definition.",
+      "line": 103
+    },
+    {
+      "level": "PASS",
+      "message": "Value \"retired\" is unique within enumerator \"ToolStatus\".",
+      "line": 104
+    },
+    {
+      "level": "PASS",
+      "message": "Value \"retired\" in enumerator \"ToolStatus\" has a definition.",
+      "line": 104
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"MemberStatus\" is under a recognized vocabulary section.",
+      "line": 106
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"MemberStatus\" has a Kind.",
+      "line": 106
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"MemberStatus\" has valid Kind \"enumerator\".",
+      "line": 106
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"MemberStatus\" Kind matches section \"Enumerators\".",
+      "line": 106
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"MemberStatus\" has a local definition.",
+      "line": 106
+    },
+    {
+      "level": "PASS",
+      "message": "Enumerator \"MemberStatus\" contains values.",
+      "line": 106
+    },
+    {
+      "level": "PASS",
+      "message": "Enumerator \"MemberStatus\" has no Composition block.",
+      "line": 106
+    },
+    {
+      "level": "PASS",
+      "message": "Enumerator \"MemberStatus\" has no Additional field.",
+      "line": 106
+    },
+    {
+      "level": "PASS",
+      "message": "Value \"active\" is unique within enumerator \"MemberStatus\".",
+      "line": 114
+    },
+    {
+      "level": "PASS",
+      "message": "Value \"active\" in enumerator \"MemberStatus\" has a definition.",
+      "line": 114
+    },
+    {
+      "level": "PASS",
+      "message": "Value \"inactive\" is unique within enumerator \"MemberStatus\".",
+      "line": 115
+    },
+    {
+      "level": "PASS",
+      "message": "Value \"inactive\" in enumerator \"MemberStatus\" has a definition.",
+      "line": 115
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"Tool\" is under a recognized vocabulary section.",
+      "line": 119
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"Tool\" has a Kind.",
+      "line": 119
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"Tool\" has valid Kind \"composite\".",
+      "line": 119
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"Tool\" Kind matches section \"Composites\".",
+      "line": 119
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"Tool\" has a local definition.",
+      "line": 119
+    },
+    {
+      "level": "PASS",
+      "message": "Composite \"Tool\" contains composition members.",
+      "line": 119
+    },
+    {
+      "level": "PASS",
+      "message": "Composite \"Tool\" declares Additional.",
+      "line": 119
+    },
+    {
+      "level": "PASS",
+      "message": "Composite \"Tool\" has valid Additional value \"MAY\".",
+      "line": 119
+    },
+    {
+      "level": "PASS",
+      "message": "Composite \"Tool\" member \"toolId\" has valid requirement \"MUST\".",
+      "line": 127
+    },
+    {
+      "level": "PASS",
+      "message": "Composite \"Tool\" member \"toolId\" is unique.",
+      "line": 127
+    },
+    {
+      "level": "PASS",
+      "message": "Composite \"Tool\" member \"toolName\" has valid requirement \"MUST\".",
+      "line": 128
+    },
+    {
+      "level": "PASS",
+      "message": "Composite \"Tool\" member \"toolName\" is unique.",
+      "line": 128
+    },
+    {
+      "level": "PASS",
+      "message": "Composite \"Tool\" member \"toolDescription\" has valid requirement \"MUST\".",
+      "line": 129
+    },
+    {
+      "level": "PASS",
+      "message": "Composite \"Tool\" member \"toolDescription\" is unique.",
+      "line": 129
+    },
+    {
+      "level": "PASS",
+      "message": "Composite \"Tool\" member \"ToolStatus\" has valid requirement \"MUST\".",
+      "line": 130
+    },
+    {
+      "level": "PASS",
+      "message": "Composite \"Tool\" member \"ToolStatus\" is unique.",
+      "line": 130
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"Member\" is under a recognized vocabulary section.",
+      "line": 134
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"Member\" has a Kind.",
+      "line": 134
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"Member\" has valid Kind \"composite\".",
+      "line": 134
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"Member\" Kind matches section \"Composites\".",
+      "line": 134
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"Member\" has a local definition.",
+      "line": 134
+    },
+    {
+      "level": "PASS",
+      "message": "Composite \"Member\" contains composition members.",
+      "line": 134
+    },
+    {
+      "level": "PASS",
+      "message": "Composite \"Member\" declares Additional.",
+      "line": 134
+    },
+    {
+      "level": "PASS",
+      "message": "Composite \"Member\" has valid Additional value \"MAY\".",
+      "line": 134
+    },
+    {
+      "level": "PASS",
+      "message": "Composite \"Member\" member \"memberId\" has valid requirement \"MUST\".",
+      "line": 142
+    },
+    {
+      "level": "PASS",
+      "message": "Composite \"Member\" member \"memberId\" is unique.",
+      "line": 142
+    },
+    {
+      "level": "PASS",
+      "message": "Composite \"Member\" member \"memberName\" has valid requirement \"MUST\".",
+      "line": 143
+    },
+    {
+      "level": "PASS",
+      "message": "Composite \"Member\" member \"memberName\" is unique.",
+      "line": 143
+    },
+    {
+      "level": "PASS",
+      "message": "Composite \"Member\" member \"memberEmail\" has valid requirement \"MUST\".",
+      "line": 144
+    },
+    {
+      "level": "PASS",
+      "message": "Composite \"Member\" member \"memberEmail\" is unique.",
+      "line": 144
+    },
+    {
+      "level": "PASS",
+      "message": "Composite \"Member\" member \"MemberStatus\" has valid requirement \"MUST\".",
+      "line": 145
+    },
+    {
+      "level": "PASS",
+      "message": "Composite \"Member\" member \"MemberStatus\" is unique.",
+      "line": 145
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"Reservation\" is under a recognized vocabulary section.",
+      "line": 149
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"Reservation\" has a Kind.",
+      "line": 149
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"Reservation\" has valid Kind \"composite\".",
+      "line": 149
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"Reservation\" Kind matches section \"Composites\".",
+      "line": 149
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"Reservation\" has a local definition.",
+      "line": 149
+    },
+    {
+      "level": "PASS",
+      "message": "Composite \"Reservation\" contains composition members.",
+      "line": 149
+    },
+    {
+      "level": "PASS",
+      "message": "Composite \"Reservation\" declares Additional.",
+      "line": 149
+    },
+    {
+      "level": "PASS",
+      "message": "Composite \"Reservation\" has valid Additional value \"MAY\".",
+      "line": 149
+    },
+    {
+      "level": "PASS",
+      "message": "Composite \"Reservation\" member \"reservationId\" has valid requirement \"MUST\".",
+      "line": 162
+    },
+    {
+      "level": "PASS",
+      "message": "Composite \"Reservation\" member \"reservationId\" is unique.",
+      "line": 162
+    },
+    {
+      "level": "PASS",
+      "message": "Composite \"Reservation\" member \"reservedAt\" has valid requirement \"MUST\".",
+      "line": 163
+    },
+    {
+      "level": "PASS",
+      "message": "Composite \"Reservation\" member \"reservedAt\" is unique.",
+      "line": 163
+    },
+    {
+      "level": "PASS",
+      "message": "Composite \"Reservation\" member \"expiresAt\" has valid requirement \"MUST\".",
+      "line": 164
+    },
+    {
+      "level": "PASS",
+      "message": "Composite \"Reservation\" member \"expiresAt\" is unique.",
+      "line": 164
+    },
+    {
+      "level": "PASS",
+      "message": "Composite \"Reservation\" member \"memberId\" has valid requirement \"MUST\".",
+      "line": 165
+    },
+    {
+      "level": "PASS",
+      "message": "Composite \"Reservation\" member \"memberId\" is unique.",
+      "line": 165
+    },
+    {
+      "level": "PASS",
+      "message": "Composite \"Reservation\" member \"toolId\" has valid requirement \"MUST\".",
+      "line": 166
+    },
+    {
+      "level": "PASS",
+      "message": "Composite \"Reservation\" member \"toolId\" is unique.",
+      "line": 166
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"Checkout\" is under a recognized vocabulary section.",
+      "line": 170
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"Checkout\" has a Kind.",
+      "line": 170
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"Checkout\" has valid Kind \"composite\".",
+      "line": 170
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"Checkout\" Kind matches section \"Composites\".",
+      "line": 170
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"Checkout\" has a local definition.",
+      "line": 170
+    },
+    {
+      "level": "PASS",
+      "message": "Composite \"Checkout\" contains composition members.",
+      "line": 170
+    },
+    {
+      "level": "PASS",
+      "message": "Composite \"Checkout\" declares Additional.",
+      "line": 170
+    },
+    {
+      "level": "PASS",
+      "message": "Composite \"Checkout\" has valid Additional value \"MAY\".",
+      "line": 170
+    },
+    {
+      "level": "PASS",
+      "message": "Composite \"Checkout\" member \"checkoutId\" has valid requirement \"MUST\".",
+      "line": 182
+    },
+    {
+      "level": "PASS",
+      "message": "Composite \"Checkout\" member \"checkoutId\" is unique.",
+      "line": 182
+    },
+    {
+      "level": "PASS",
+      "message": "Composite \"Checkout\" member \"memberId\" has valid requirement \"MUST\".",
+      "line": 183
+    },
+    {
+      "level": "PASS",
+      "message": "Composite \"Checkout\" member \"memberId\" is unique.",
+      "line": 183
+    },
+    {
+      "level": "PASS",
+      "message": "Composite \"Checkout\" member \"toolId\" has valid requirement \"MUST\".",
+      "line": 184
+    },
+    {
+      "level": "PASS",
+      "message": "Composite \"Checkout\" member \"toolId\" is unique.",
+      "line": 184
+    },
+    {
+      "level": "PASS",
+      "message": "Composite \"Checkout\" member \"checkedOutAt\" has valid requirement \"MUST\".",
+      "line": 185
+    },
+    {
+      "level": "PASS",
+      "message": "Composite \"Checkout\" member \"checkedOutAt\" is unique.",
+      "line": 185
+    },
+    {
+      "level": "PASS",
+      "message": "Composite \"Checkout\" member \"dueDate\" has valid requirement \"MUST\".",
+      "line": 186
+    },
+    {
+      "level": "PASS",
+      "message": "Composite \"Checkout\" member \"dueDate\" is unique.",
+      "line": 186
+    },
+    {
+      "level": "PASS",
+      "message": "Composite \"Checkout\" member \"returnedAt\" has valid requirement \"MAY\".",
+      "line": 187
+    },
+    {
+      "level": "PASS",
+      "message": "Composite \"Checkout\" member \"returnedAt\" is unique.",
+      "line": 187
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"tool\" is under a recognized vocabulary section.",
+      "line": 193
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"tool\" has a Kind.",
+      "line": 193
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"tool\" has valid Kind \"resource\".",
+      "line": 193
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"tool\" Kind matches section \"Resources\".",
+      "line": 193
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"tool\" has a local definition.",
+      "line": 193
+    },
+    {
+      "level": "PASS",
+      "message": "Resource \"tool\" has no Values block.",
+      "line": 193
+    },
+    {
+      "level": "PASS",
+      "message": "Resource \"tool\" has no Composition block.",
+      "line": 193
+    },
+    {
+      "level": "PASS",
+      "message": "Resource \"tool\" has no Additional field.",
+      "line": 193
+    },
+    {
+      "level": "PASS",
+      "message": "Resource \"tool\" field \"Kind\" is allowed.",
+      "line": 193
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"member\" is under a recognized vocabulary section.",
+      "line": 199
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"member\" has a Kind.",
+      "line": 199
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"member\" has valid Kind \"resource\".",
+      "line": 199
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"member\" Kind matches section \"Resources\".",
+      "line": 199
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"member\" has a local definition.",
+      "line": 199
+    },
+    {
+      "level": "PASS",
+      "message": "Resource \"member\" has no Values block.",
+      "line": 199
+    },
+    {
+      "level": "PASS",
+      "message": "Resource \"member\" has no Composition block.",
+      "line": 199
+    },
+    {
+      "level": "PASS",
+      "message": "Resource \"member\" has no Additional field.",
+      "line": 199
+    },
+    {
+      "level": "PASS",
+      "message": "Resource \"member\" field \"Kind\" is allowed.",
+      "line": 199
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"addTool\" is under a recognized vocabulary section.",
+      "line": 207
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"addTool\" has a Kind.",
+      "line": 207
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"addTool\" has valid Kind \"affordance\".",
+      "line": 207
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"addTool\" Kind matches section \"Affordances\".",
+      "line": 207
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"addTool\" has a local definition.",
+      "line": 207
+    },
+    {
+      "level": "PASS",
+      "message": "Affordance \"addTool\" has no Values block.",
+      "line": 207
+    },
+    {
+      "level": "PASS",
+      "message": "Affordance \"addTool\" has no Composition block.",
+      "line": 207
+    },
+    {
+      "level": "PASS",
+      "message": "Affordance \"addTool\" has no Additional field.",
+      "line": 207
+    },
+    {
+      "level": "PASS",
+      "message": "Affordance \"addTool\" field \"Kind\" is allowed.",
+      "line": 207
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"searchAvailableTools\" is under a recognized vocabulary section.",
+      "line": 213
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"searchAvailableTools\" has a Kind.",
+      "line": 213
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"searchAvailableTools\" has valid Kind \"affordance\".",
+      "line": 213
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"searchAvailableTools\" Kind matches section \"Affordances\".",
+      "line": 213
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"searchAvailableTools\" has a local definition.",
+      "line": 213
+    },
+    {
+      "level": "PASS",
+      "message": "Affordance \"searchAvailableTools\" has no Values block.",
+      "line": 213
+    },
+    {
+      "level": "PASS",
+      "message": "Affordance \"searchAvailableTools\" has no Composition block.",
+      "line": 213
+    },
+    {
+      "level": "PASS",
+      "message": "Affordance \"searchAvailableTools\" has no Additional field.",
+      "line": 213
+    },
+    {
+      "level": "PASS",
+      "message": "Affordance \"searchAvailableTools\" field \"Kind\" is allowed.",
+      "line": 213
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"reserveTool\" is under a recognized vocabulary section.",
+      "line": 219
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"reserveTool\" has a Kind.",
+      "line": 219
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"reserveTool\" has valid Kind \"affordance\".",
+      "line": 219
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"reserveTool\" Kind matches section \"Affordances\".",
+      "line": 219
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"reserveTool\" has a local definition.",
+      "line": 219
+    },
+    {
+      "level": "PASS",
+      "message": "Affordance \"reserveTool\" has no Values block.",
+      "line": 219
+    },
+    {
+      "level": "PASS",
+      "message": "Affordance \"reserveTool\" has no Composition block.",
+      "line": 219
+    },
+    {
+      "level": "PASS",
+      "message": "Affordance \"reserveTool\" has no Additional field.",
+      "line": 219
+    },
+    {
+      "level": "PASS",
+      "message": "Affordance \"reserveTool\" field \"Kind\" is allowed.",
+      "line": 219
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"cancelReservation\" is under a recognized vocabulary section.",
+      "line": 226
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"cancelReservation\" has a Kind.",
+      "line": 226
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"cancelReservation\" has valid Kind \"affordance\".",
+      "line": 226
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"cancelReservation\" Kind matches section \"Affordances\".",
+      "line": 226
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"cancelReservation\" has a local definition.",
+      "line": 226
+    },
+    {
+      "level": "PASS",
+      "message": "Affordance \"cancelReservation\" has no Values block.",
+      "line": 226
+    },
+    {
+      "level": "PASS",
+      "message": "Affordance \"cancelReservation\" has no Composition block.",
+      "line": 226
+    },
+    {
+      "level": "PASS",
+      "message": "Affordance \"cancelReservation\" has no Additional field.",
+      "line": 226
+    },
+    {
+      "level": "PASS",
+      "message": "Affordance \"cancelReservation\" field \"Kind\" is allowed.",
+      "line": 226
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"checkoutTool\" is under a recognized vocabulary section.",
+      "line": 232
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"checkoutTool\" has a Kind.",
+      "line": 232
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"checkoutTool\" has valid Kind \"affordance\".",
+      "line": 232
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"checkoutTool\" Kind matches section \"Affordances\".",
+      "line": 232
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"checkoutTool\" has a local definition.",
+      "line": 232
+    },
+    {
+      "level": "PASS",
+      "message": "Affordance \"checkoutTool\" has no Values block.",
+      "line": 232
+    },
+    {
+      "level": "PASS",
+      "message": "Affordance \"checkoutTool\" has no Composition block.",
+      "line": 232
+    },
+    {
+      "level": "PASS",
+      "message": "Affordance \"checkoutTool\" has no Additional field.",
+      "line": 232
+    },
+    {
+      "level": "PASS",
+      "message": "Affordance \"checkoutTool\" field \"Kind\" is allowed.",
+      "line": 232
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"returnTool\" is under a recognized vocabulary section.",
+      "line": 239
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"returnTool\" has a Kind.",
+      "line": 239
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"returnTool\" has valid Kind \"affordance\".",
+      "line": 239
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"returnTool\" Kind matches section \"Affordances\".",
+      "line": 239
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"returnTool\" has a local definition.",
+      "line": 239
+    },
+    {
+      "level": "PASS",
+      "message": "Affordance \"returnTool\" has no Values block.",
+      "line": 239
+    },
+    {
+      "level": "PASS",
+      "message": "Affordance \"returnTool\" has no Composition block.",
+      "line": 239
+    },
+    {
+      "level": "PASS",
+      "message": "Affordance \"returnTool\" has no Additional field.",
+      "line": 239
+    },
+    {
+      "level": "PASS",
+      "message": "Affordance \"returnTool\" field \"Kind\" is allowed.",
+      "line": 239
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"inspectTool\" is under a recognized vocabulary section.",
+      "line": 249
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"inspectTool\" has a Kind.",
+      "line": 249
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"inspectTool\" has valid Kind \"affordance\".",
+      "line": 249
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"inspectTool\" Kind matches section \"Affordances\".",
+      "line": 249
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"inspectTool\" has a local definition.",
+      "line": 249
+    },
+    {
+      "level": "PASS",
+      "message": "Affordance \"inspectTool\" has no Values block.",
+      "line": 249
+    },
+    {
+      "level": "PASS",
+      "message": "Affordance \"inspectTool\" has no Composition block.",
+      "line": 249
+    },
+    {
+      "level": "PASS",
+      "message": "Affordance \"inspectTool\" has no Additional field.",
+      "line": 249
+    },
+    {
+      "level": "PASS",
+      "message": "Affordance \"inspectTool\" field \"Kind\" is allowed.",
+      "line": 249
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"retireTool\" is under a recognized vocabulary section.",
+      "line": 258
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"retireTool\" has a Kind.",
+      "line": 258
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"retireTool\" has valid Kind \"affordance\".",
+      "line": 258
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"retireTool\" Kind matches section \"Affordances\".",
+      "line": 258
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"retireTool\" has a local definition.",
+      "line": 258
+    },
+    {
+      "level": "PASS",
+      "message": "Affordance \"retireTool\" has no Values block.",
+      "line": 258
+    },
+    {
+      "level": "PASS",
+      "message": "Affordance \"retireTool\" has no Composition block.",
+      "line": 258
+    },
+    {
+      "level": "PASS",
+      "message": "Affordance \"retireTool\" has no Additional field.",
+      "line": 258
+    },
+    {
+      "level": "PASS",
+      "message": "Affordance \"retireTool\" field \"Kind\" is allowed.",
+      "line": 258
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"addMember\" is under a recognized vocabulary section.",
+      "line": 267
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"addMember\" has a Kind.",
+      "line": 267
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"addMember\" has valid Kind \"affordance\".",
+      "line": 267
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"addMember\" Kind matches section \"Affordances\".",
+      "line": 267
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"addMember\" has a local definition.",
+      "line": 267
+    },
+    {
+      "level": "PASS",
+      "message": "Affordance \"addMember\" has no Values block.",
+      "line": 267
+    },
+    {
+      "level": "PASS",
+      "message": "Affordance \"addMember\" has no Composition block.",
+      "line": 267
+    },
+    {
+      "level": "PASS",
+      "message": "Affordance \"addMember\" has no Additional field.",
+      "line": 267
+    },
+    {
+      "level": "PASS",
+      "message": "Affordance \"addMember\" field \"Kind\" is allowed.",
+      "line": 267
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"searchForMember\" is under a recognized vocabulary section.",
+      "line": 273
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"searchForMember\" has a Kind.",
+      "line": 273
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"searchForMember\" has valid Kind \"affordance\".",
+      "line": 273
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"searchForMember\" Kind matches section \"Affordances\".",
+      "line": 273
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"searchForMember\" has a local definition.",
+      "line": 273
+    },
+    {
+      "level": "PASS",
+      "message": "Affordance \"searchForMember\" has no Values block.",
+      "line": 273
+    },
+    {
+      "level": "PASS",
+      "message": "Affordance \"searchForMember\" has no Composition block.",
+      "line": 273
+    },
+    {
+      "level": "PASS",
+      "message": "Affordance \"searchForMember\" has no Additional field.",
+      "line": 273
+    },
+    {
+      "level": "PASS",
+      "message": "Affordance \"searchForMember\" field \"Kind\" is allowed.",
+      "line": 273
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"updateMember\" is under a recognized vocabulary section.",
+      "line": 279
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"updateMember\" has a Kind.",
+      "line": 279
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"updateMember\" has valid Kind \"affordance\".",
+      "line": 279
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"updateMember\" Kind matches section \"Affordances\".",
+      "line": 279
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"updateMember\" has a local definition.",
+      "line": 279
+    },
+    {
+      "level": "PASS",
+      "message": "Affordance \"updateMember\" has no Values block.",
+      "line": 279
+    },
+    {
+      "level": "PASS",
+      "message": "Affordance \"updateMember\" has no Composition block.",
+      "line": 279
+    },
+    {
+      "level": "PASS",
+      "message": "Affordance \"updateMember\" has no Additional field.",
+      "line": 279
+    },
+    {
+      "level": "PASS",
+      "message": "Affordance \"updateMember\" field \"Kind\" is allowed.",
+      "line": 279
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"searchCheckoutHistory\" is under a recognized vocabulary section.",
+      "line": 286
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"searchCheckoutHistory\" has a Kind.",
+      "line": 286
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"searchCheckoutHistory\" has valid Kind \"affordance\".",
+      "line": 286
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"searchCheckoutHistory\" Kind matches section \"Affordances\".",
+      "line": 286
+    },
+    {
+      "level": "PASS",
+      "message": "Term \"searchCheckoutHistory\" has a local definition.",
+      "line": 286
+    },
+    {
+      "level": "PASS",
+      "message": "Affordance \"searchCheckoutHistory\" has no Values block.",
+      "line": 286
+    },
+    {
+      "level": "PASS",
+      "message": "Affordance \"searchCheckoutHistory\" has no Composition block.",
+      "line": 286
+    },
+    {
+      "level": "PASS",
+      "message": "Affordance \"searchCheckoutHistory\" has no Additional field.",
+      "line": 286
+    },
+    {
+      "level": "PASS",
+      "message": "Affordance \"searchCheckoutHistory\" field \"Kind\" is allowed.",
+      "line": 286
+    },
+    {
+      "level": "PASS",
+      "message": "Composite \"Tool\" member \"toolId\" resolves to a defined term.",
+      "line": 127
+    },
+    {
+      "level": "PASS",
+      "message": "Composite \"Tool\" member \"toolId\" has allowed kind \"atom\".",
+      "line": 127
+    },
+    {
+      "level": "PASS",
+      "message": "Composite \"Tool\" member \"toolName\" resolves to a defined term.",
+      "line": 128
+    },
+    {
+      "level": "PASS",
+      "message": "Composite \"Tool\" member \"toolName\" has allowed kind \"atom\".",
+      "line": 128
+    },
+    {
+      "level": "PASS",
+      "message": "Composite \"Tool\" member \"toolDescription\" resolves to a defined term.",
+      "line": 129
+    },
+    {
+      "level": "PASS",
+      "message": "Composite \"Tool\" member \"toolDescription\" has allowed kind \"atom\".",
+      "line": 129
+    },
+    {
+      "level": "PASS",
+      "message": "Composite \"Tool\" member \"ToolStatus\" resolves to a defined term.",
+      "line": 130
+    },
+    {
+      "level": "PASS",
+      "message": "Composite \"Tool\" member \"ToolStatus\" has allowed kind \"enumerator\".",
+      "line": 130
+    },
+    {
+      "level": "PASS",
+      "message": "Composite \"Member\" member \"memberId\" resolves to a defined term.",
+      "line": 142
+    },
+    {
+      "level": "PASS",
+      "message": "Composite \"Member\" member \"memberId\" has allowed kind \"atom\".",
+      "line": 142
+    },
+    {
+      "level": "PASS",
+      "message": "Composite \"Member\" member \"memberName\" resolves to a defined term.",
+      "line": 143
+    },
+    {
+      "level": "PASS",
+      "message": "Composite \"Member\" member \"memberName\" has allowed kind \"atom\".",
+      "line": 143
+    },
+    {
+      "level": "PASS",
+      "message": "Composite \"Member\" member \"memberEmail\" resolves to a defined term.",
+      "line": 144
+    },
+    {
+      "level": "PASS",
+      "message": "Composite \"Member\" member \"memberEmail\" has allowed kind \"atom\".",
+      "line": 144
+    },
+    {
+      "level": "PASS",
+      "message": "Composite \"Member\" member \"MemberStatus\" resolves to a defined term.",
+      "line": 145
+    },
+    {
+      "level": "PASS",
+      "message": "Composite \"Member\" member \"MemberStatus\" has allowed kind \"enumerator\".",
+      "line": 145
+    },
+    {
+      "level": "PASS",
+      "message": "Composite \"Reservation\" member \"reservationId\" resolves to a defined term.",
+      "line": 162
+    },
+    {
+      "level": "PASS",
+      "message": "Composite \"Reservation\" member \"reservationId\" has allowed kind \"atom\".",
+      "line": 162
+    },
+    {
+      "level": "PASS",
+      "message": "Composite \"Reservation\" member \"reservedAt\" resolves to a defined term.",
+      "line": 163
+    },
+    {
+      "level": "PASS",
+      "message": "Composite \"Reservation\" member \"reservedAt\" has allowed kind \"atom\".",
+      "line": 163
+    },
+    {
+      "level": "PASS",
+      "message": "Composite \"Reservation\" member \"expiresAt\" resolves to a defined term.",
+      "line": 164
+    },
+    {
+      "level": "PASS",
+      "message": "Composite \"Reservation\" member \"expiresAt\" has allowed kind \"atom\".",
+      "line": 164
+    },
+    {
+      "level": "PASS",
+      "message": "Composite \"Reservation\" member \"memberId\" resolves to a defined term.",
+      "line": 165
+    },
+    {
+      "level": "PASS",
+      "message": "Composite \"Reservation\" member \"memberId\" has allowed kind \"atom\".",
+      "line": 165
+    },
+    {
+      "level": "PASS",
+      "message": "Composite \"Reservation\" member \"toolId\" resolves to a defined term.",
+      "line": 166
+    },
+    {
+      "level": "PASS",
+      "message": "Composite \"Reservation\" member \"toolId\" has allowed kind \"atom\".",
+      "line": 166
+    },
+    {
+      "level": "PASS",
+      "message": "Composite \"Checkout\" member \"checkoutId\" resolves to a defined term.",
+      "line": 182
+    },
+    {
+      "level": "PASS",
+      "message": "Composite \"Checkout\" member \"checkoutId\" has allowed kind \"atom\".",
+      "line": 182
+    },
+    {
+      "level": "PASS",
+      "message": "Composite \"Checkout\" member \"memberId\" resolves to a defined term.",
+      "line": 183
+    },
+    {
+      "level": "PASS",
+      "message": "Composite \"Checkout\" member \"memberId\" has allowed kind \"atom\".",
+      "line": 183
+    },
+    {
+      "level": "PASS",
+      "message": "Composite \"Checkout\" member \"toolId\" resolves to a defined term.",
+      "line": 184
+    },
+    {
+      "level": "PASS",
+      "message": "Composite \"Checkout\" member \"toolId\" has allowed kind \"atom\".",
+      "line": 184
+    },
+    {
+      "level": "PASS",
+      "message": "Composite \"Checkout\" member \"checkedOutAt\" resolves to a defined term.",
+      "line": 185
+    },
+    {
+      "level": "PASS",
+      "message": "Composite \"Checkout\" member \"checkedOutAt\" has allowed kind \"atom\".",
+      "line": 185
+    },
+    {
+      "level": "PASS",
+      "message": "Composite \"Checkout\" member \"dueDate\" resolves to a defined term.",
+      "line": 186
+    },
+    {
+      "level": "PASS",
+      "message": "Composite \"Checkout\" member \"dueDate\" has allowed kind \"atom\".",
+      "line": 186
+    },
+    {
+      "level": "PASS",
+      "message": "Composite \"Checkout\" member \"returnedAt\" resolves to a defined term.",
+      "line": 187
+    },
+    {
+      "level": "PASS",
+      "message": "Composite \"Checkout\" member \"returnedAt\" has allowed kind \"atom\".",
+      "line": 187
+    }
+  ]
+}

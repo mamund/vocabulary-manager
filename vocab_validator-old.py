@@ -31,7 +31,7 @@ from typing import Any
 from urllib.parse import urlparse
 
 VALIDATOR_NAME = "Vocabulary Markdown Validator"
-VALIDATOR_VERSION = "0.6.1"
+VALIDATOR_VERSION = "0.6.0"
 FORMAT_VERSION = "0.1"
 
 VALID_KINDS = {"atom", "enumerator", "composite", "resource", "affordance"}
@@ -687,9 +687,9 @@ def validate_model(model: dict[str, Any], parsed: ParsedDocument | None = None) 
                 continue
 
             check(
-                target.get("kind") in {"atom", "enumerator", "composite"},
+                target.get("kind") in {"atom", "composite"},
                 f'Composite "{name}" member "{member}" has allowed kind "{target.get("kind")}".',
-                f'Composite "{name}" member "{member}" must be an atom, enumerator, or composite, not {target.get("kind")}.',
+                f'Composite "{name}" member "{member}" must be an atom or composite, not {target.get("kind")}.',
                 line,
             )
 
