@@ -263,7 +263,7 @@ A composite page MUST contain:
 
 Every composition member MUST be rendered as a link to its local vocabulary term page.
 
-Composite members MUST be atoms or composites.
+Composite members MUST link to their atom or composite term pages.
 
 Requirement levels MUST preserve the source values:
 
