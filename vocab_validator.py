@@ -6,7 +6,7 @@ Authoritative parser and validator for Vocabulary Markdown Format v0.1.
 
 This module is both:
 1. a command-line validator, and
-2. a reusable parser/validation library for tools such as vocab_build.py.
+2. a reusable parser/validation library for tools such as vocab_builder.py.
 
 Reusable API:
     parse_document(text) -> ParsedDocument
