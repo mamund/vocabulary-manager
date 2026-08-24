@@ -11,7 +11,7 @@ The format is intended to be:
 - deterministic enough to generate the HTML vocabulary artifact;
 - independent of API representation and interaction design.
 
-The vocabulary defines reusable semantic terms. API Story design determines how those terms are assembled into API resources, actions, inputs, and returns.
+The vocabulary defines reusable semantic terms. API Story design determines how those terms are used in API resources, actions, inputs, returns, and interactions.
 
 ---
 
@@ -78,6 +78,14 @@ composite
 resource
 affordance
 ```
+
+The five kinds describe different roles that terms play in the domain vocabulary:
+
+- an `atom` represents an individual semantic concept;
+- an `enumerator` represents a named set of controlled values;
+- a `composite` represents a meaningful grouping of vocabulary terms;
+- a `resource` names a resource concept available for later API design;
+- an `affordance` names a meaningful domain behavior available for later API design.
 
 Example:
 
@@ -158,11 +166,15 @@ Enumerator values are NOT vocabulary terms. They MUST NOT receive independent vo
 
 The enumerator itself IS a vocabulary term and MUST receive a vocabulary term page.
 
+An enumerator MAY participate as a member of a composite. In that case, the composite references the enumerator term, not one of its individual values.
+
 ---
 
 ## 5. Composite rules
 
-A composite is a vocabulary term that assembles atoms and/or other composites for a particular domain context.
+A composite is a vocabulary term that groups existing vocabulary terms into a meaningful domain concept.
+
+A composite MAY contain atoms, enumerators, and other composites.
 
 Example:
 
@@ -177,7 +189,7 @@ Composition:
 
 * toolId : MUST
 * toolName : MUST
-* toolCondition : SHOULD
+* ToolCondition : SHOULD
 * Reservation : MAY
 
 Additional: MAY
@@ -193,7 +205,7 @@ A composite:
 Each composition member:
 
 - MUST reference an existing vocabulary term;
-- MUST reference a term whose kind is `atom` or `composite`;
+- MUST reference a term whose kind is `atom`, `enumerator`, or `composite`;
 - MUST appear no more than once within the composite;
 - MUST declare one requirement level.
 
@@ -208,6 +220,18 @@ MAY
 MUST, SHOULD, and MAY apply to the relationship between the composite and the referenced member. They do not describe an intrinsic property of the referenced term.
 
 Composites MAY reference other composites, allowing nested composition.
+
+When a composite references an enumerator, it references the enumerator as a semantic concept. The enumerator's individual values do not become independent members of the composite.
+
+For example:
+
+```text
+Tool
+ ├── toolId          MUST       atom
+ ├── toolName        MUST       atom
+ ├── ToolCondition   SHOULD     enumerator
+ └── Reservation     MAY        composite
+```
 
 Composition describes semantic membership. It MUST NOT be interpreted as prescribing a JSON, XML, database, programming-language, or other representation structure.
 

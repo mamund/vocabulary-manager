@@ -1,8 +1,222 @@
 # Vocabulary Manager Quick Start
 
-This guide shows how to author a simple vocabulary, validate it, and generate the cross-linked HTML artifact.
+Vocabulary Manager is a small toolchain for defining, validating, and publishing a domain vocabulary for API design.
 
-## 1. Create a vocabulary file
+A vocabulary gives the project a stable language before that language is translated into API stories, interface descriptions, code, and other downstream artifacts.
+
+The basic workflow is:
+
+```text
+Define the vocabulary
+        |
+        v
+Validate the Markdown
+        |
+        v
+Generate the HTML vocabulary
+```
+
+This guide walks through that process using a small task-management vocabulary.
+
+## 1. Understand the five kinds
+
+Vocabulary Manager organizes terms into five kinds:
+
+| Kind | Represents | Example |
+|---|---|---|
+| `atom` | An individual semantic concept | `taskId` |
+| `enumerator` | A named set of controlled values | `TaskStatus` |
+| `composite` | A meaningful grouping of vocabulary terms | `Task` |
+| `resource` | A resource concept available for later API design | `task` |
+| `affordance` | A meaningful domain behavior available for later API design | `updateTask` |
+
+These kinds describe different roles that terms play in the domain language.
+
+### Atoms
+
+An **atom** represents an individual semantic concept.
+
+For example:
+
+```markdown
+### taskId
+
+Kind: atom
+
+A stable identifier for a task.
+```
+
+Other atoms might include:
+
+```text
+title
+dueDate
+createdAt
+```
+
+Atoms are leaf terms. They do not contain other vocabulary terms.
+
+### Enumerators
+
+An **enumerator** defines a named set of controlled values.
+
+For example:
+
+```markdown
+### TaskStatus
+
+Kind: enumerator
+
+The recognized status values for a task.
+
+Values:
+
+* pending : The task has not yet been completed.
+* completed : The task has been completed.
+```
+
+`TaskStatus` is a vocabulary term.
+
+The values `pending` and `completed` belong to that enumerator. They are not independent vocabulary terms.
+
+### Composites
+
+A **composite** groups existing vocabulary terms into a meaningful domain concept.
+
+For example:
+
+```markdown
+### Task
+
+Kind: composite
+
+A contextual description of a task.
+
+Composition:
+
+* taskId : MUST
+* title : MUST
+* TaskStatus : SHOULD
+* dueDate : SHOULD
+
+Additional: MAY
+```
+
+This tells us that the concept `Task` includes several other concepts from the vocabulary.
+
+The requirement level describes the relationship between the composite and the member:
+
+```text
+MUST
+SHOULD
+MAY
+```
+
+For example:
+
+```text
+Task
+ ├── taskId       MUST
+ ├── title        MUST
+ ├── TaskStatus   SHOULD
+ └── dueDate      SHOULD
+```
+
+Atoms, enumerators, and other composites may participate in a composite.
+
+Composition describes semantic membership. It does not prescribe a JSON object, XML structure, database record, class, or other implementation representation.
+
+### Resources
+
+A **resource** names a resource concept that may later appear in the API design.
+
+For example:
+
+```markdown
+### task
+
+Kind: resource
+
+A task managed through the API.
+```
+
+A resource is a leaf vocabulary term.
+
+The vocabulary identifies and defines the concept. It does not specify its representation, operations, return type, URI, or HTTP behavior.
+
+### Affordances
+
+An **affordance** names a meaningful behavior available in the domain.
+
+For example:
+
+```markdown
+### updateTask
+
+Kind: affordance
+
+Update information about a task.
+```
+
+Other affordances might include:
+
+```text
+createTask
+completeTask
+deleteTask
+```
+
+Affordances are also leaf terms.
+
+The vocabulary names and defines the behavior. Inputs, outputs, resource relationships, HTTP methods, and other interaction details belong to later API design.
+
+## 2. See the vocabulary as a language
+
+The five kinds work together to establish a reusable language for the domain.
+
+Our small example contains:
+
+```text
+Atoms
+  taskId
+  title
+  dueDate
+
+Enumerator
+  TaskStatus
+    pending
+    completed
+
+Composite
+  Task
+    taskId
+    title
+    TaskStatus
+    dueDate
+
+Resource
+  task
+
+Affordances
+  readTask
+  updateTask
+```
+
+At this stage we know what these terms mean.
+
+We deliberately have not decided things such as:
+
+```text
+PUT /tasks/123
+POST /tasks/123/complete
+GET /tasks/123
+```
+
+Those are API design decisions.
+
+Vocabulary Manager establishes the language that later design stages can use to express those decisions.
+
+## 3. Create the vocabulary file
 
 Create a file named:
 
@@ -10,7 +224,7 @@ Create a file named:
 my-vocabulary.md
 ```
 
-Add a small vocabulary:
+Add the vocabulary:
 
 ```markdown
 # Sample Vocabulary
@@ -65,6 +279,7 @@ Composition:
 
 * taskId : MUST
 * title : MUST
+* TaskStatus : SHOULD
 * dueDate : SHOULD
 
 Additional: MAY
@@ -92,19 +307,19 @@ Kind: affordance
 Update information about a task.
 ```
 
-Vocabulary Manager recognizes five term kinds:
+A vocabulary document always contains the five sections:
 
-```text
-atom
-enumerator
-composite
-resource
-affordance
+```markdown
+## Atoms
+## Enumerators
+## Composites
+## Resources
+## Affordances
 ```
 
-Atoms, resources, and affordances are leaf terms. Enumerators contain values. Composites assemble atoms and/or other composites.
+Every term has a unique name, a `Kind`, and a complete local definition.
 
-## 2. Validate the vocabulary
+## 4. Validate the vocabulary
 
 Run:
 
@@ -122,13 +337,29 @@ ERROR: 0
 VALID
 ```
 
-To see every validation check, including successful checks:
+Validation checks structural correctness and referential integrity.
+
+For example, the validator can detect:
+
+- duplicate term names
+- invalid kinds
+- missing definitions
+- invalid composite references
+- malformed enumerators
+- invalid requirement levels
+- fields that are not allowed for a particular kind
+
+Validation does not determine whether your vocabulary is a good description of the domain.
+
+That requires domain review and, where appropriate, semantic coaching.
+
+To see every validation check:
 
 ```bash
 python vocab_validator.py --verbose my-vocabulary.md
 ```
 
-For machine-readable output:
+For machine-readable results:
 
 ```bash
 python vocab_validator.py --json my-vocabulary.md
@@ -148,7 +379,7 @@ Exit codes are:
 2  usage or file-read error
 ```
 
-## 3. Generate the HTML vocabulary
+## 5. Generate the HTML vocabulary
 
 Once the Markdown validates, build the HTML artifact:
 
@@ -156,9 +387,9 @@ Once the Markdown validates, build the HTML artifact:
 python vocab_builder.py my-vocabulary.md -o ./vocab-html
 ```
 
-The builder validates the source before generating HTML.
+The builder validates the vocabulary before generating the HTML.
 
-The output will look roughly like:
+The resulting directory will look roughly like:
 
 ```text
 vocab-html/
@@ -196,15 +427,16 @@ vocab-html/
 The generated artifact includes:
 
 - a vocabulary landing page
-- five section landing pages
-- one local HTML page per vocabulary term
-- cross-links from composite members to their term pages
+- five kind-specific section pages
+- one local page for each vocabulary term
+- links from composite members to their term pages
 - derived `Used by` backlinks
 - client-side search
 - artifact metadata
-- no external runtime dependencies
 
-## 4. Open the vocabulary
+Enumerator values remain on the enumerator page because they are values rather than independent vocabulary terms.
+
+## 6. Browse the vocabulary
 
 Open:
 
@@ -214,11 +446,15 @@ vocab-html/index.html
 
 in a web browser.
 
-You can browse by vocabulary kind or use the client-side search box to find terms.
+You can browse the vocabulary by kind or search for individual terms.
 
-## 5. Edit and rebuild
+The generated HTML makes relationships in the vocabulary easier to explore.
 
-The Markdown file remains the authored source.
+For example, the `Task` page links to the vocabulary pages for its members. Those member pages can also show that they are used by `Task`.
+
+## 7. Edit and rebuild
+
+The Markdown vocabulary remains the authored source.
 
 Make changes in:
 
@@ -226,7 +462,7 @@ Make changes in:
 my-vocabulary.md
 ```
 
-Then validate again:
+Then validate:
 
 ```bash
 python vocab_validator.py my-vocabulary.md
@@ -238,49 +474,65 @@ and rebuild:
 python vocab_builder.py my-vocabulary.md -o ./vocab-html
 ```
 
-The HTML artifact is generated from the Markdown source and should not be edited independently.
+The generated HTML is a projection of the Markdown source and should not be edited independently.
 
-## Common authoring rules
+## 8. Know the design boundary
 
-Every term MUST have:
+Vocabulary Manager is intentionally concerned with language rather than complete API design.
 
-- a unique name
-- a valid `Kind`
-- a complete local definition
-
-Composite members MUST reference existing atoms or composites:
-
-```markdown
-Composition:
-
-* taskId : MUST
-* title : MUST
-* dueDate : SHOULD
-
-Additional: MAY
-```
-
-Enumerator values stay inside the enumerator and do not become vocabulary terms:
-
-```markdown
-Values:
-
-* pending : The task has not yet been completed.
-* completed : The task has been completed.
-```
-
-Resources and affordances remain leaf terms. Inputs, returns, resource relationships, and other API design details belong later in the API Story.
-
-## Typical workflow
+The vocabulary can tell us that these concepts exist:
 
 ```text
+taskId
+TaskStatus
+Task
+task
+updateTask
+```
+
+It can also tell us what they mean and, for composites, which vocabulary terms participate in them.
+
+It does not determine:
+
+```text
+HTTP methods
+URI structures
+request representations
+response representations
+affordance inputs
+affordance returns
+resource/action relationships
+status codes
+```
+
+Those decisions belong to later API design artifacts.
+
+This boundary keeps the vocabulary reusable.
+
+The same term can survive several translations from domain understanding through design and implementation without requiring the vocabulary itself to encode those later decisions.
+
+## 9. Typical workflow
+
+The complete Vocabulary Manager workflow is:
+
+```text
+Identify domain concepts
+          |
+          v
+Classify the terms
+          |
+          v
+Atoms / Enumerators / Composites
+Resources / Affordances
+          |
+          v
 Author Vocabulary Markdown
           |
           v
 vocab_validator.py
           |
           v
-       VALID
+        VALID
           |
           v
  vocab_builder.py
@@ -289,4 +541,10 @@ vocab_validator.py
 Searchable HTML Vocabulary
 ```
 
-The Markdown vocabulary is the source. The validator checks it. The builder publishes it.
+The Markdown vocabulary is the source.
+
+The validator checks it.
+
+The builder publishes it.
+
+The resulting vocabulary provides a stable domain language for the API design work that follows.
